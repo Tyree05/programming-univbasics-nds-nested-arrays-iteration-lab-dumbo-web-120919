@@ -27,10 +27,10 @@ def find_greater_pair(src)
     while element_index < src[row_index].count do
       element_index += 1
     end
-    if src[row_index][element_index] < src[row_index][element_index].count
-      greater_num << src[row_index][0]
-    else
+    if src[row_index][0] < src[row_index][1]
       greater_num << src[row_index][1]
+    else
+      greater_num << src[row_index][0]
     end
     row_index += 1
   end
