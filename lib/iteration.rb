@@ -49,13 +49,13 @@ def total_even_pairs(src)
 
       element_index += 1
     end
-    if src[row_index][0][0] == 2
-      total += src[row_index][0]
-    elsif src[row_index][0][0] == 4
+    if src[row_index][0][0] == 8
       total += src[row_index][0]
     elsif src[row_index][0][0] == 6
       total += src[row_index][0]
-    elsif src[row_index][0][0] == 8
+    elsif src[row_index][0][0] == 4
+      total += src[row_index][0]
+    elsif src[row_index][0][0] == 2
       total += src[row_index][0]
     else
       total += src[row_index][1]
